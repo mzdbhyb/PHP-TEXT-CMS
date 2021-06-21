@@ -1,0 +1,293 @@
+@charset "utf-8";
+
+body {
+	margin: 0px;
+	font: 14px/1.5 NSimSun, SimSun, Verdana, Geneva, Sans-Serif;
+	background: #42413c;
+	color: #ccc;
+}
+
+p { margin: 0px; padding: 6px 0px; }
+
+a {
+	text-decoration: none;
+	color: #3f48cc;
+}
+
+a:hover, a:visited:hover { color: #ff0000; }
+
+a:visited { color: #005344; }
+
+img { border: 0px; }
+
+/* 主容器 自适应宽度 */
+#container {
+	margin: 0px auto;
+	width: 80%;
+	max-width: 1200px;
+	min-width: 1024px;
+}
+
+/* 顶部 */
+#top {
+	padding: 0px;
+	color: #ccc;
+	min-height: 80px;
+}
+
+#top p {
+	margin: 0px;
+	padding: 0px;
+}
+
+#top a { color: #fff; }
+
+#top_left {
+	width: 200px;
+	float: left;
+}
+
+#top_right {
+	padding-right: 8px;
+	float: right;
+}
+
+/* 导航条 */
+#nav {
+	height: 28px;
+	line-height: 28px;
+	background: #efefef;
+	color: #000;
+	border-bottom: 3px solid #966596;
+	border-radius: 4px 4px 0px 0px;
+	clear: both;
+}
+
+#nav ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#nav ul li {
+	margin-left:2px;
+	float:left;
+}
+
+#nav ul li a {
+	display: block;
+	width: 87px;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	background: #cc99ff;
+	color: #fff;
+	font-size: 14px;
+}
+
+#nav ul li a:hover {
+	background: #993366;
+	color: #fff;
+}
+
+#nav ul li a span {
+	margin-left: 3px;
+	width: 0px;
+	height: 0px;
+	font-size: 0;
+	border-width: 4px;
+	border-color: #eee transparent transparent;
+	border-style: solid;
+}
+
+#nav ul li a#current {
+	background: #966596;
+	font-weight: bold;
+	color: #fff;
+}
+
+#nav ul li ul {
+	border: 1px solid #ccc;
+	display: none;
+	position: absolute;
+}
+
+#nav ul li ul li {
+	margin: 0px;
+	width: 160px;
+	background: #996699;
+	color: #aaa;
+	float: none;
+}
+
+#nav ul li ul li a {
+	background: none;
+	width: 160px;
+	text-align: left;
+	text-indent: 8px;
+}
+
+#nav ul li ul li a#scurrent {
+	background: #666;
+	color: #eee;
+}
+
+#nav ul li ul li a:hover {
+	background: #999;
+	color: #fff;
+}
+
+#nav ul li:hover ul {
+	display: block;
+}
+
+/* 纵向中部容器 */
+#main {
+	background: #fff;
+	color: #000;
+	padding: 1px;
+}
+
+/* 左栏 */
+#mainside {
+	width: 260px;
+	border: 1px solid #aaa;
+	padding: 0px;
+	float: left;
+}
+
+/* 右栏 */
+#maincont {
+	margin-left: 262px;
+	border: 1px solid #aaa;
+	padding: 0px;
+	border-left: 0px;
+	overflow: hidden;
+}
+
+/* 右栏的上部左边 首页用 */
+#mmleft {
+	width: 40%;
+	min-width: 260px;
+	min-height: 350px;
+	float: left;
+}
+
+/* 右栏的上部右边 首页用 */
+#mmright {
+	width: 50%;
+	min-height: 350px;
+	border: 1px solid #ccc;
+	margin: 4px;
+	padding: 6px;
+	float: right;
+}
+
+/* 右栏下部 首页用 */
+#mmbottom {
+	padding: 10px;
+	clear: both;
+}
+
+/* 底部 */
+#bottom {
+	padding: 10px;
+	font-size: 12px;
+	text-align: center;
+}
+
+#bottom a { color: #fff; }
+
+/* 返回顶部专用 */
+#sDiv {
+	position: fixed;
+	left: 90%;
+	bottom: 20px;
+	display: none;
+	width: 32px;
+	height: 32px;
+}
+
+/* 评论 */
+#comm { padding: 0px 8px; }
+
+/* 边框样式 */
+.border { border: 1px solid #aaa; }
+
+/* 左栏标题样式一 */
+.left_tt_bg1 {
+	background-color: #efefef;
+	color: #000;
+	padding: 6px 4px 4px 6px;
+	border-bottom: 1px solid #808080;
+}
+
+/* 左栏标题样式二 */
+.left_tt_bg2 {
+	background-color: #efefef;
+	color: #000;
+	padding: 6px 4px 4px 6px;
+	border-top: 1px solid #808080;
+	border-bottom: 1px solid #808080;
+}
+
+/* 正文规范 */
+.cont {
+	background-color: #fff;
+	color: #000;
+	padding: 8px;
+	white-space: normal;
+	word-wrap: break-word;
+	word-break: break-all;
+	font-size: 14px;
+}
+
+/* 正文辅助 */
+.position {
+	font-size: 13px;
+	color: #777;
+	padding: 4px;
+	text-align: left;
+}
+
+/* 居中 */
+.mid { text-align:center; }
+
+/* 居右 */
+.right { text-align: right; }
+
+/* 右浮动 */
+.fright {
+	padding-right: 8px;
+	float: right;
+}
+
+/* 标题样式 取代 H */
+.title {
+	font-size: 200%;
+	font-weight: bold;
+	text-shadow: 0 1px 1px #aaa;
+}
+
+/* 阴影边框样式 */
+.shadow {
+	border: 1px solid #aaa;
+	border-radius: 6px;
+	box-shadow: 2px 2px 2px #ccc;
+}
+
+/* 深色框 */
+.dark {
+	background: #ccc;
+	color: #000;
+	border: 1px solid #aaa;
+}
+
+/* 浅色框 */
+.grey {
+	background: #eee;
+	color: #000;
+	border: 1px solid #aaa;
+}
+
+.red { color: #ff0000; } /* 红色字体 */
